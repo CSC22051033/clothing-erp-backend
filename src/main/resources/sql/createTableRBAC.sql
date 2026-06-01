@@ -10,11 +10,12 @@ DROP TABLE IF EXISTS `User`;
 DROP TABLE IF EXISTS `Role`;
 DROP TABLE IF EXISTS `Permission`;
 
+/*
 CREATE TABLE `User` (
-    `userId`   INT          NOT NULL AUTO_INCREMENT,
+    `user_id`   INT          NOT NULL AUTO_INCREMENT,
     `username` VARCHAR(50)  NOT NULL,
     `password` VARCHAR(255) NOT NULL,
-    `realName` VARCHAR(50)  NULL,
+    `real_name` VARCHAR(50)  NULL,
     `status`   TINYINT      NOT NULL,
     PRIMARY KEY (`userId`),
     UNIQUE KEY `uk_username` (`username`)
@@ -60,3 +61,4 @@ CREATE TABLE `RolePermission` (
         ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+*/
