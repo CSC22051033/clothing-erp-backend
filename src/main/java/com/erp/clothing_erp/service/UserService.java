@@ -1,6 +1,7 @@
 package com.erp.clothing_erp.service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -49,5 +50,9 @@ public class UserService {
         user.setStatus(1);   // 1-正常
         userRepository.save(user);
         return true;
+    }
+
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
     }
 }
